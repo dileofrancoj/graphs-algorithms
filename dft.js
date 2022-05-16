@@ -3,7 +3,7 @@
     Para este caso, usaremos una Pila para recorrer la estructura
 */
 
-function depthFirstTraversal(graph, source) {
+function dft(graph, source) {
   const stack = [source];
   while (stack.length > 0) {
     const current = stack.pop(); // retorno el ùltimo elemento de la pila
@@ -16,6 +16,13 @@ function depthFirstTraversal(graph, source) {
   return stack;
 }
 
+function dftRecursive(graph, source) {
+  console.log(`Current node of graph (recursively): ${source}`);
+  for (let neighbor of graph[source]) {
+    dftRecursive(graph, neighbor);
+  }
+}
+
 const graph = {
   a: ["b", "c"],
   b: ["d"],
@@ -25,4 +32,5 @@ const graph = {
   f: [],
 };
 
-depthFirstTraversal(graph, "a");
+dft(graph, "a");
+dftRecursive(graph,"a")
