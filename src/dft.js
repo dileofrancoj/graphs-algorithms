@@ -18,12 +18,12 @@ function dft(graph, source) {
   return stack;
 }
 
-function dftRecursive(graph, source) {
+function recursiveDft(graph, source) {
   console.log(`Current node of graph (recursively): ${source}`);
   for (let neighbor of graph[source]) {
-    dftRecursive(graph, neighbor);
+    recursiveDft(graph, neighbor);
   }
 }
 
 dft(baseGraph, "a");
-dftRecursive(baseGraph,"a")
+recursiveDft(baseGraph,"a")
