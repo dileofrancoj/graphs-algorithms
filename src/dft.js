@@ -3,6 +3,8 @@
     Para este caso, usaremos una Pila para recorrer la estructura
 */
 
+const {graph : baseGraph} = require("./models/graphs");
+
 function dft(graph, source) {
   const stack = [source];
   while (stack.length > 0) {
@@ -23,14 +25,5 @@ function dftRecursive(graph, source) {
   }
 }
 
-const graph = {
-  a: ["b", "c"],
-  b: ["d"],
-  c: ["e"],
-  d: ["f"],
-  e: [],
-  f: [],
-};
-
-dft(graph, "a");
-dftRecursive(graph,"a")
+dft(baseGraph, "a");
+dftRecursive(baseGraph,"a")
