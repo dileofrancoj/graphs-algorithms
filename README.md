@@ -13,6 +13,10 @@ Vg y Ag son conjuntos finitos y, particularmente Vg es un conjunto no vacío.
 
 <b>f: Es una regla de asignación que relaciona los nodos con las aristas.</b>
 
+### Grafo dirigido
+
+Un grafo dirigido o digrafo es un tipo de grafo en el cual las aristas tienen un sentido definido.
+
 ### Aclaración 1
 
 Este README no pretende ser un documento formal respecto de la teoría de grafos. Si quieren un curso teórico de grafos, pueden mandarme un mensaje para poder realizar uno.
