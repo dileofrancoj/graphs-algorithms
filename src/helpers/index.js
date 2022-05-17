@@ -9,3 +9,5 @@ function buildGraphFromEdges(edges) {
   }
   return graph;
 }
+
+module.exports = { buildGraphFromEdges };
