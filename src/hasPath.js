@@ -6,7 +6,7 @@
     Time complexity: O(e) siendo e la cantidad de aristas.
 */
 
-const { directedGraph: baseGraph, edges } = require("./models/graphs");
+const { directedGraph: baseGraph } = require("./models/graphs");
 
 function recursiveHasPath(graph, source, destination) {
   if (source === destination) return true; // base case
@@ -32,10 +32,8 @@ function hasPath(graph, source, destination) {
   return false;
 }
 
-
 const result = recursiveHasPath(baseGraph, "f", "k");
 console.log("recursive hasPath?: ", result);
 
 const result2 = hasPath(baseGraph, "f", "k");
 console.log("hasPath?: ", result2);
-

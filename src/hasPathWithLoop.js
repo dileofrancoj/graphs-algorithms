@@ -2,6 +2,7 @@
 Este caso, considera que el árbol tenga un ciclo entre algun par de nodos. 
 Se establece una lógica de visitado para no caer en un loop infinito+
 */
+const { edges } = require("./models/graphs");
 
 const { buildGraphFromEdges } = require("./helpers");
 
