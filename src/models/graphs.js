@@ -16,4 +16,12 @@ const directedGraph = {
   k: [],
 };
 
-module.exports = { graph, directedGraph };
+const edges = [
+  ["i", "j"],
+  ["k", "i"],
+  ["m", "k"],
+  ["k", "l"],
+  ["o", "n"],
+];
+
+module.exports = { graph, directedGraph, edges };
