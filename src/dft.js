@@ -1,6 +1,7 @@
 /*
     Este algoritmo tiene por objetivo recorrer solo una vez todos los nodos del grafo
-    Para este caso, usaremos una Pila para recorrer la estructura
+    Para este caso, usaremos una Pila para recorrer la estructura.
+    Temporal complexity: O(n) siendo n la cantidad de nodos.
 */
 
 const {graph : baseGraph} = require("./models/graphs");

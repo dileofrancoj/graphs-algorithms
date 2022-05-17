@@ -7,4 +7,13 @@ const graph = {
   f: [],
 };
 
-module.exports = { graph };
+const directedGraph = {
+  f: ["g", "i"],
+  g: ["h"],
+  h: [],
+  i: ["g", "k"],
+  j: ["i"],
+  k: [],
+};
+
+module.exports = { graph, directedGraph };
