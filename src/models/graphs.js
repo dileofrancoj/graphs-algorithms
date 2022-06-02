@@ -34,4 +34,14 @@ const edges = [
   ["o", "n"],
 ];
 
-module.exports = { graph, directedGraph, edges, numericGraph };
+const notConnectedGraph = {
+  0: ["8", "1", "5"],
+  1: ["0"],
+  5: ["8", "0"],
+  8: ["0", "5"],
+  2: ["3", "4"],
+  3: ["2", "4"],
+  4: ["3", "2"],
+};
+
+module.exports = { graph, directedGraph, edges, numericGraph, notConnectedGraph };
